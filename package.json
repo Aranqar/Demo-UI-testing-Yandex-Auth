@@ -1,0 +1,28 @@
+{
+  "name": "playwright-yandex-demo-tests",
+  "version": "1.0.0",
+  "description": "Demo UI testing Yandex Auth",
+  "main": "index.js",
+  "scripts": {
+    "lint:prettier": "prettier --check \"{src,tests}/**/*.{ts,tsx}\" \"*.{js,json}\"",
+    "lint:prettier:fix": "prettier --write \"{src,tests}/**/*.{ts,tsx}\" *.js",
+    "test": "playwright test",
+    "test:debug": "PWDEBUG=console playwright test",
+    "test:install-deps": "playwright install chromium && playwright install-deps chromium"
+  },
+  "keywords": [],
+  "author": "Vadim Sh",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.5",
+    "prettier": "^3.1.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "playwright-extra": "^4.3.6",
+    "puppeteer": "^21.6.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}
